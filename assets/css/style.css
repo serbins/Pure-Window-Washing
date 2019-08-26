@@ -5,6 +5,15 @@
 
 /* Globals */
 
+body, html {
+  overflow-x: hidden;
+}
+
+body {
+  border: 30px solid white;
+  box-sizing: border-box;
+}
+
 h1,h2,h3,h4,h5,h6, p, a, button{
   letter-spacing: 2px;
   font-family: 'Nunito', sans-serif;
@@ -65,23 +74,23 @@ nav {
 
 nav .logo {
   width: 120px;
-  padding-top: 22px;
+  padding-top: 50px;
   box-sizing: border-box;
 }
 
 .nav-links {
   float: right;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 nav ul {
-  margin-top: 45px;
+  margin-top: 65px;
 }
 
 nav li {
   list-style: none;
   display: inline;
-  margin-left: 12px;
+  margin-left: 20px;
 }
 
 nav a {
@@ -94,6 +103,12 @@ nav a {
 
 .hero h1, .hero p, .hero i {
   color: white;
+}
+.hero p {
+  font-size: 20px;
+}
+.hero i {
+  font-size: 36px;
 }
 
 .hero img {
@@ -195,15 +210,13 @@ h3, p {
 
 .process-panel p {
   padding-top: 25px;
-
 }
-
 
 /* MEDIA */
 
 @media (max-width: 600px) {
   .process-panel {
-    width: 375px;
+    width: 350px;
   }
   .process-panel .circle {
     margin: 50px auto;
@@ -211,5 +224,8 @@ h3, p {
   }
 .process-panel p {
     text-align: center;
+  }
+  nav ul {
+    display: none;
   }
 }
