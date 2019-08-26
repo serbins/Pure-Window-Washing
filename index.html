@@ -16,12 +16,10 @@
 
   <!-- Header -->
   <header>
-    <nav class="nav-bar">
-      <div class="conatiner">
-        <div class="logo">
-          <img src="assets/img/pure-logo-white.png" width="200"
+    <nav>
+      <div class="container">
+          <img src="assets/img/pure-logo-white.png"
           alt="Pure Window Washing Logo" class="logo">
-        </div>
         <div class="nav-links">
           <ul>
             <li><a href="#">Schedule A Cleaning</a></li>
@@ -71,14 +69,18 @@
 
   <!-- Quick Qoute -->
   <section class="qoute">
-    <div class="how-to-count-panel-toggle"></div>
-      <div class="how-to-count-panel"></div>
+    <!-- <div class="how-to-count-panel-toggle">
+      <p>How to count your windows</p>
+    </div>
+      <div class="how-to-count-panel">
+        <h4>How to count your windows</h4>
+      </div> -->
         <div class="row text-center">
           <h5>Upfront Quick Qoute!</h5>
           <h6>No Hidden Cost's</h6>
           <p>Let's see how many windows you have</p>
-          <input id="windowQty" type="text">
-        <div id="qouteOutput"></div>
+          <input id="windowQty" type="number" placeholder="Please use only numbers">
+        <div id="qouteOutput"><h5 id="qoute">$</h5></div>
       </div>
   </section>
 
@@ -86,7 +88,7 @@
   <section class="process">
     <div class="container">
       <div class="row">
-        <h3>The <span class="accent-color">Pure</span> Process</h3>
+        <h3>The <span class="accent-color bold">Pure</span> Process</h3>
       </div><!-- end row -->
 
       <div class="row">
@@ -135,7 +137,8 @@
       <div class="two columns"></div>
         <div class="eight columns">
           <div class="two-third columns">
-          <h5>What's next? <br> Go ahead and get yourself scheduled in and we will be in touch!</h5>
+          <h5>What's next? </h5>
+          <p> Go ahead and get yourself scheduled in and we will be in touch!</p>
           </div>
           <div class="one-third columns">
           <button>Get Scheduled!</button>
