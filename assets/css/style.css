@@ -153,6 +153,11 @@ h3, p {
   font-size: 16px;
 }
 
+#qoute {
+  font-size: 26px;
+  /* padding: 25px 0; */
+}
+
 /* .how-to-count-panel-toggle {
   width: 70px;
   background: black;
