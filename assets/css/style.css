@@ -9,6 +9,11 @@ body, html {
   overflow-x: hidden;
 }
 
+a:hover {
+  color: white;
+  opacity: .7;
+}
+
 body {
   border: 30px solid white;
   box-sizing: border-box;
@@ -36,10 +41,25 @@ a {
 .text-center {
   text-align: center;
 }
+.text-left {
+  text-align: left;
+}
+
+.m-t {
+  margin-top: 50px;
+}
 
 .sub-text {
   font-family: 'Handlee', cursive;
   font-size: 20px;
+}
+
+.button {
+  color: white;
+
+}
+.button:hover {
+  color: white;
 }
 
 /* .two::after {
@@ -58,12 +78,27 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* Header */
 
+
 header  {
   width: 100%;
   height: 800px;
   background: url('../img/hero-bg.png');
   background-positon: center center;
   background-size: cover;
+}
+
+.mobile-contact-icons {
+  display:none;
+  position: absolute;
+  top:50px;
+  right: 50px;
+  z-index: 1000;
+}
+.mobile-contact-icons i {
+  color: white;
+  font-size: 36px;
+  margin-left: 15px;
+
 }
 
 nav {
@@ -73,7 +108,7 @@ nav {
 }
 
 nav .logo {
-  width: 120px;
+  width: 150px;
   padding-top: 50px;
   box-sizing: border-box;
 }
@@ -95,6 +130,8 @@ nav li {
 
 nav a {
   color: white;
+  letter-spacing: 3px;
+  font-size: 16px;
 }
 
 .hero {
@@ -181,8 +218,6 @@ h3, p {
 
 }
 
-
-
 .process-panel {
   width: auto;
   background: white;
@@ -243,6 +278,9 @@ h3, p {
   color: white;
 }
 
+
+
+
 /* MEDIA */
 
 @media (max-width: 600px) {
@@ -254,7 +292,7 @@ h3, p {
   }
 
   .hero {
-    margin-top: 100px;
+    margin-top: 150px;
   }
   .hero img {
     width: 50px;
@@ -268,6 +306,9 @@ h3, p {
   }
   nav ul {
     display: none;
+  }
+  .mobile-contact-icons {
+    display: block;
   }
 
 }
